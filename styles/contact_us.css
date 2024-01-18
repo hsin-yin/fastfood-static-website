@@ -1,0 +1,119 @@
+main {
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    color: rgba(80, 35, 20, 1);
+    margin-bottom: 0;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+}
+
+
+.sm_title {
+    text-align: center;
+    color: rgba(80, 42, 30, 0.7);
+    margin-top: 0;
+    font-size: small;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+}
+
+.main_container {
+    margin: 0 auto 13% auto;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1.2fr;
+    border: 0;
+    border-top: 0.8px solid rgb(171, 171, 171);
+    border-radius: 5px;
+    /* background-color: white; */
+    /* background-color: rgb(241, 226, 198); */
+}
+
+.row_container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(174, 174, 174);
+    border-left: 0.8px solid rgb(181, 181, 181);
+    border-right: 0.8px solid rgb(179, 179, 179);
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    /* background-color: rgb(227, 227, 227); */
+}
+
+.row_container span {
+    color: red;
+    font-size: 13px;
+    position: relative;
+    left: 10%;
+}
+
+.cont_input {
+    width: 100%;
+    justify-content: left;
+    padding-left: 8%;
+}
+
+.cont_input input {
+    width: 70%;
+    padding: 1.2%;
+    border-radius: 3px;
+    border: 0.8px solid grey;
+    background-color: white;
+}
+
+.cont_input select {
+    background-color: white;
+}
+
+.cont_title {
+    padding: 6% 4% 6% 6%;
+    width: 30%;
+    border-right: 0.8px solid rgb(196, 196, 196);
+    font-weight: bold;
+    /* background-color: white; */
+    align-self: stretch;
+    background-color: rgb(227, 227, 227);
+}
+
+.bigger_input {
+    height: 80px;
+    width: 70%;
+    background-color: white;
+}
+.cont_us_button_group {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 10%;
+    border: none;
+}
+.cont_us_button_group button{
+    background-color: rgb(247, 238, 223);
+    color: rgba(248, 144, 37, 0.9);
+    font-weight: bold;
+    border: 1.6px solid rgba(248, 144, 37, 0.9);
+    border-radius: 30px;
+    padding: 2% 12%;
+    cursor: pointer;
+}
+.cont_us_button_group button:hover {
+    background-color: rgba(248, 144, 37, 0.9);
+    color: white;
+}
+
+
+@media screen and (max-width: 576px) {
+    .img_item {
+        width: 100%;
+    }
+    .title {
+        margin-top: 1%;
+        font-size: large;
+    }
+
+    .sm_title {
+        font-size: x-small;
+    }
+
+}

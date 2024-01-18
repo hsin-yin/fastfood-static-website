@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGERLOVER</title>
+    <link rel="icon" href="../pictures/BURGER_ICON.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/contact_us.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar_top">
+            <div class="logo_container">
+                <a class="logotext" href="../index.html">
+                    <img class="hamburger_img" src="../pictures/Hamburger.png" alt="burgerLover logo">
+                    <span class="nav_logo">BURGERLOVER</span>
+                </a>
+            </div>
+            <div class="navlink_container">
+                <div class="navlink">
+                    <div>
+                        <a class="link_item" href="menu.html">菜單 MENU</a>
+                    </div>
+                    <div>
+                        <a class="link_item" href="location.html">門市 LOCATION</a>
+                    </div>
+                    <div>
+                        <a class="link_item" href="contact_us.html">聯絡我們 CONTACT US</a>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button onclick="document.getElementById('lg_id').style.display='block'" class="login"><img
+                            class="login_img" src="../pictures/login_icon.png" alt="login"></button>
+                    <button class="price"><img class="price_img" src="../pictures/price_icon.png" alt="shopping cart">$
+                        0</button>
+                </div>
+            </div>
+        </nav>
+        <div class="nav_space"></div>
+    </header>
+    <main>
+        <h2 class="title">聯絡我們</h2>
+        <p class="sm_title">Contact Us</p>
+        <form class="main_container" action="">
+            <div class="row_container">
+                <div class="cont_title name_title">姓名<span>必填</span></div>
+                <div class="cont_input"><input class="required_input1" type="text" placeholder="姓名" required></div>
+            </div>
+            <div class="row_container">
+                <div class="cont_title">手機號碼</div>
+                <div class="cont_input"><input type="text" placeholder="手機號碼"></div>
+            </div>
+            <div class="row_container">
+                <div class="cont_title">電子信箱<span>必填</span></div>
+                <div class="cont_input required_input"><input class="required_input2" type="email" placeholder="電子信箱"
+                        required></div>
+            </div>
+            <div class="row_container">
+                <div class="cont_title">消費地點<span>必填</span></div>
+                <div class="cont_input sel_box">
+                    <select class="required_input3" name="" id="" required>
+                        <option value="">請選擇門市</option>
+                        <option value="1">公益店</option>
+                        <option value="2">大墩店</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row_container">
+                <div class="cont_title content_title">內容<span>必填</span></div>
+                <div class="cont_input"><textarea class="bigger_input required_input4" placeholder="上限50個字"
+                        maxlength="50" required></textarea></div>
+            </div>
+            <div class="cont_us_button_group">
+                <button type="submit" onclick="form_sumit()">提交</button>
+                <button type="reset" onclick="cancel()">取消</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- 登入框 -->
+    <div id="lg_id" class="modal">
+        <div class="lg_container">
+            <p4 class="login_title">會員登入</p4>
+            <p class="login_p">LOGIN</p>
+            <span onclick="document.getElementById('lg_id').style.display='none'" class="close">&times;</span>
+            <form class="login_form" action="">
+                <div class="enter_group">
+                    <label for="member"><img src="../pictures/login_icon2.png" alt=""></label>
+                    <input id="member" type="email" name="" id="" placeholder="請輸入email" required>
+                </div>
+                <div class="enter_group">
+                    <label for="pswd"><img src="../pictures/Password_icon.png" alt=""></label>
+                    <input id="pswd" type="password" name="" id="" placeholder="請輸入密碼" required>
+                </div>
+                <div class="button_group">
+                    <button>登入</button>
+                    <button onclick="document.getElementById('lg_id').style.display='none'">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- RWD 下面fix選單 -->
+    <div class="container_div">
+        <div>
+            <a href="../index.html">
+                <img src="../pictures/RWD_icon1.png" alt="">
+                <p>HOME</p>
+            </a>
+        </div>
+        <div>
+            <a href="./menu.html">
+                <img src="../pictures/RWD_icon2.png" alt="">
+                <p>MENU</p>
+            </a>
+        </div>
+        <div>
+            <a href="./location.html">
+                <img src="../pictures/RWD_icon3.png" alt="">
+                <p>LOCN</p>
+            </a>
+        </div>
+        <div>
+            <a href="./contact_us.html">
+                <img src="../pictures/RWD_icon6.png" alt="">
+                <p>MAIL</p>
+            </a>
+        </div>
+        <div>
+            <button class="" onclick="document.getElementById('lg_id').style.display='block'">
+                <img src="../pictures/RWD_icon5.png" alt="">
+                <p>LOGIN</p>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_column">
+            <ul>
+                <li><a href="#">隱私權聲明</a></li>
+                <li><a href="#">訂購須知</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">使用條款</a></li>
+                <li><a href="#">營養資訊</a></li>
+            </ul>
+            <ul>
+                <li><a href="./contact_us.html">聯絡我們</a></li>
+                <li><a href="#">服務時間: 9:00 - 21:00</a></li>
+                <li><a href="#">電話: 04-123456</a></li>
+            </ul>
+            <ul class="img_item">
+                <li>
+                    <a href="#"><img src="../pictures/Facebook.png" alt=""></a>
+                    <a href="#"><img src="../pictures/instagram.png" alt=""></a>
+                    <a href="#"><img src="../pictures/Twitter.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function cancel() {
+            document.querySelector("cont_input > input").innerHTML = "";
+        }
+        function form_sumit() {
+            var value_one = document.querySelector('.required_input1');
+            var value_two = document.querySelector('.required_input2');
+            var value_three = document.querySelector('.required_input3');
+            var value_four = document.querySelector('.required_input4');
+            if (value_one.value != "") {
+                if (value_two.value != "") {
+                    if (value_three.value != "") {
+                        if (value_four.value != "") {
+                            alert('送出成功');
+                        }
+                    }
+                }
+            }
+            else {
+                alert('資料尚未填完整');
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

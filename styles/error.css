@@ -1,0 +1,27 @@
+body {
+    padding: 5%;
+}
+
+.error_btn {
+        cursor: pointer;
+        width: 8%;
+        padding: 0.5% 0%;
+        font-weight: 700;
+        font-size: medium;
+        white-space: nowrap;
+        border: rgba(248, 144, 37, 0.9) 2px solid;
+        border-radius: 30px;
+        background-color: rgb(247, 238, 223);
+        color: rgba(248, 144, 37, 0.9);
+}
+
+.error_btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.error_btn:hover {
+    color: white;
+    background-color: rgba(248, 144, 37, 0.9);
+    border: none;
+}

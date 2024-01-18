@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGERLOVER</title>
+    <link rel="icon" href="../pictures/BURGER_ICON.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/location.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar_top">
+            <div class="logo_container">
+                <a class="logotext" href="../index.html">
+                    <img class="hamburger_img" src="../pictures/Hamburger.png" alt="burgerLover logo">
+                    <span class="nav_logo">BURGERLOVER</span>
+                </a>
+            </div>
+            <div class="navlink_container">
+                <div class="navlink">
+                    <div>
+                        <a class="link_item" href="menu.html">菜單 MENU</a>
+                    </div>
+                    <div>
+                        <a class="link_item" href="location.html">門市 LOCATION</a>
+                    </div>
+                    <div>
+                        <a class="link_item" href="contact_us.html">聯絡我們 CONTACT US</a>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button onclick="document.getElementById('lg_id').style.display='block'" class="login"><img
+                            class="login_img" src="../pictures/login_icon.png" alt="login"></button>
+                    <button class="price"><img class="price_img" src="../pictures/price_icon.png" alt="shopping cart">$
+                        0</button>
+                </div>
+            </div>
+        </nav>
+        <div class="nav_space"></div>
+    </header>
+    <main>
+        <div class="loc_title_container">
+            <div>
+                <h1>門市</h1>
+                <p>Locations</p>
+            </div>
+            <div class="loc_button">
+                <button style="border: rgba(80, 35, 20, 1) 1.8px solid;" id="loc_button1"
+                    onclick="location_1()">公益店</button>
+                <button id="loc_button2" onclick="location_2()">大墩店</button>
+            </div>
+        </div>
+        <div class="loc_container">
+            <div class="loc_content">
+                <ul class="loc_info">
+                    <li>
+                        <img src="../pictures/location_icon.png" alt="">
+                        <span id="loc_address">台中市南屯區公益路二段51號</span>
+                    </li>
+                    <li>
+                        <img src="../pictures/tel_icon.png" alt="">
+                        <span id="loc_tel">04-8888999</span>
+                    </li>
+                    <li>
+                        <img src="../pictures/Email_icon.png" alt="">
+                        <span>burgerlover@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="map_container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14562.417726390522!2d120.6510083!3d24.1505262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9650422ae1%3A0x334dfd5796c49ff6!2z6LOH5bGV5ZyL6ZqbLeWOnyDos4fnrZbmnIMt5pW45L2N5pWZ6IKy56CU56m25omALeS4reWNgA!5e0!3m2!1szh-TW!2stw!4v1682429481462!5m2!1szh-TW!2stw"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="iframe_id">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- 登入框 -->
+    <div id="lg_id" class="modal">
+        <div class="lg_container">
+            <p4 class="login_title">會員登入</p4>
+            <p class="login_p">LOGIN</p>
+            <span onclick="document.getElementById('lg_id').style.display='none'" class="close">&times;</span>
+            <form class="login_form" action="">
+                <div class="enter_group">
+                    <label for="member"><img src="../pictures/login_icon2.png" alt=""></label>
+                    <input id="member" type="email" name="" id="" placeholder="請輸入email" required>
+                </div>
+                <div class="enter_group">
+                    <label for="pswd"><img src="../pictures/Password_icon.png" alt=""></label>
+                    <input id="pswd" type="password" name="" id="" placeholder="請輸入密碼" required>
+                </div>
+                <div class="button_group">
+                    <button>登入</button>
+                    <button onclick="document.getElementById('lg_id').style.display='none'">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- RWD 下面fix選單 -->
+    <div class="container_div">
+        <div>
+            <a href="../index.html">
+                <img src="../pictures/RWD_icon1.png" alt="">
+                <p>HOME</p>
+            </a>
+        </div>
+        <div>
+            <a href="./menu.html">
+                <img src="../pictures/RWD_icon2.png" alt="">
+                <p>MENU</p>
+            </a>
+        </div>
+        <div>
+            <a href="./location.html">
+                <img src="../pictures/RWD_icon3.png" alt="">
+                <p>LOCN</p>
+            </a>
+        </div>
+        <div>
+            <a href="./contact_us.html">
+                <img src="../pictures/RWD_icon6.png" alt="">
+                <p>MAIL</p>
+            </a>
+        </div>
+        <div>
+            <button class="" onclick="document.getElementById('lg_id').style.display='block'">
+                <img src="../pictures/RWD_icon5.png" alt="">
+                <p>LOGIN</p>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_column">
+            <ul class="footer_col1">
+                <li><a href="#">隱私權聲明</a></li>
+                <li><a href="#">訂購須知</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">使用條款</a></li>
+            </ul>
+            <ul>
+                <li><a href="./contact_us.html">聯絡我們</a></li>
+                <li>服務時間: 9:00 - 21:00</li>
+                <li>電話: 04-123456</li>
+            </ul>
+            <ul class="img_item">
+                <li>
+                    <a href="#"><img src="../pictures/Facebook.png" alt=""></a>
+                    <a href="#"><img src="../pictures/instagram.png" alt=""></a>
+                    <a href="#"><img src="../pictures/Twitter.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script>
+        function location_1() {
+            document.getElementById('loc_address').innerHTML = "台中市南屯區公益路二段51號";
+            document.getElementById('loc_tel').innerHTML = '04-8888999';
+            document.querySelector('#loc_button2').style.border = "none";
+            document.querySelector('#loc_button1').style.border = "rgba(80, 35, 20, 1) 1.8px solid";
+            // document.querySelector('#loc_button1').style.color = "rgba(80, 35, 20, 1);";
+            document.querySelector('#loc_button1').style.borderRadius = '2px';
+            document.getElementById('iframe_id').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6038853438668!2d120.64844997392709!3d24.15054537329961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9650422ae1%3A0x334dfd5796c49ff6!2z6LOH5bGV5ZyL6ZqbLeWOnyDos4fnrZbmnIMt5pW45L2N5pWZ6IKy56CU56m25omALeS4reWNgA!5e0!3m2!1szh-TW!2stw!4v1682861021009!5m2!1szh-TW!2stw";
+        }
+        function location_2() {
+            document.getElementById('loc_address').innerHTML = "台中市南屯區大墩十一街";
+            document.getElementById('loc_tel').innerHTML = '04-6666777';
+            document.querySelector('#loc_button1').style.border = "none";
+            document.querySelector('#loc_button2').style.border = "rgba(80, 35, 20, 1) 1.8px solid";
+            // document.querySelector('#loc_button2').style.color = "rgba(80, 35, 20, 1);";
+            document.querySelector('#loc_button2').style.borderRadius = '2px';
+            document.getElementById('iframe_id').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6537666326717!2d120.6428062!3d24.1487945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dbf9552bb0b%3A0x70286f08c1ea38f!2z5Y-w5Lit5biC5aSn5aKp5Y2B5LiA6KGX!5e0!3m2!1szh-TW!2stw!4v1682860884584!5m2!1szh-TW!2stw";
+        }
+
+    </script>
+</body>
+
+</html>
+
+<!-- "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6038853438668!2d120.64844997392709!3d24.15054537329961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9650422ae1%3A0x334dfd5796c49ff6!2z6LOH5bGV5ZyL6ZqbLeWOnyDos4fnrZbmnIMt5pW45L2N5pWZ6IKy56CU56m25omALeS4reWNgA!5e0!3m2!1szh-TW!2stw!4v1682861021009!5m2!1szh-TW!2stw"
+"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6537666326717!2d120.6428062!3d24.1487945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dbf9552bb0b%3A0x70286f08c1ea38f!2z5Y-w5Lit5biC5aSn5aKp5Y2B5LiA6KGX!5e0!3m2!1szh-TW!2stw!4v1682860884584!5m2!1szh-TW!2stw" -->

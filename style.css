@@ -1,0 +1,629 @@
+body {
+    background-color: rgb(247, 238, 223);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    height: 100vh
+}
+
+.navbar_top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: rgba(80, 35, 20, 1);
+    align-items: center;
+    padding: 0.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.hamburger_img {
+    height: 50px;
+}
+
+.logotext {
+    color: rgba(255, 240, 220, 1);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_logo {
+    align-self: center;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+
+}
+
+.navlink_container {
+    width: 99%;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    justify-items: end;
+
+}
+
+.navlink {
+    display: grid;
+    grid-template-columns: 3fr 4fr 5fr;
+    align-items: center;
+}
+
+.link_item {
+    color: rgba(255, 240, 220, 1);
+    text-decoration: none;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+    /*,Ink Free, Century Gothic; */
+    font-size: 0.95rem;
+}
+
+.link_item:hover,
+.link_item span:hover {
+    color: rgba(248, 144, 37, 0.9);
+}
+
+.button_container {
+    display: flex;
+    align-items: baseline;
+    padding-right: 8%;
+}
+
+.login_img {
+    width: 75%;
+    margin-top: 10%;
+}
+
+.price_img {
+    width: 45%;
+    margin: 6% 8% 6% 6%;
+
+}
+
+.login {
+    background-color: rgba(248, 144, 37, 0.9);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    position: relative;
+    right: 13%;
+}
+
+.price {
+    background-color: rgba(248, 144, 37, 0.9);
+    border-radius: 14px;
+    border: none;
+    color: rgba(255, 240, 220, 1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 40px;
+    height: auto;
+    /* Used in this example to enable scrolling */
+    /* background-color: rgb(223, 207, 185); */
+}
+
+/*  */
+/*  */
+/*  */
+/* 輪播圖 */
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    /* width: 100%; */
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    /* width: 100%; */
+}
+
+/* .mySlides img {
+    
+} */
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot_container {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.order_container {
+    text-align: center;
+    width: 100%;
+}
+
+.order_button {
+    cursor: pointer;
+    width: 20%;
+    padding: 1% 2%;
+    margin: 0.5% 1.3%;
+    font-weight: 800;
+    font-size: medium;
+    white-space: nowrap;
+    border: rgba(248, 144, 37, 0.9) 2px solid;
+    border-radius: 30px;
+    background-color: rgb(247, 238, 223);
+    color: rgba(248, 144, 37, 0.9);
+}
+
+.order_button:hover {
+    color: white;
+    background-color: rgba(248, 144, 37, 0.9);
+    border: none;
+}
+
+/*  */
+/*  */
+.section2 {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding: 6%;
+    color: rgba(80, 35, 20, 1);
+}
+
+.sec2_text {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+
+}
+
+.section2 h2 {
+    color: rgba(224, 154, 83, 1);
+    position: relative;
+    right: 15%;
+    margin: 5% 0;
+
+}
+
+.section2 p {
+    margin: 0;
+    line-height: 1.8;
+    padding: 0 5%;
+    font-size: small;
+    align-self: center;
+    font-weight: bold;
+}
+
+.section2 img {
+    width: 100%;
+}
+
+.section3 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    padding: 3% 6% 6% 6%;
+    color: rgba(80, 35, 20, 1);
+}
+
+.section3 h1 {
+    color: rgba(224, 154, 83, 1);
+    position: relative;
+    margin: 5% 0;
+    text-align: end;
+    left: 15%;
+    top: 25%;
+}
+
+.section3 p {
+    margin: 0;
+    line-height: 1.8;
+    padding: 0 5%;
+    font-size: small;
+    align-self: center;
+    font-weight: bold;
+}
+
+.section3 img {
+    width: 100%;
+}
+
+/*  */
+/*  */
+/* FOOTER */
+.footer {
+    width: 100%;
+    /* position: relative; */
+    background-color: black;
+}
+
+.footer_column {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+}
+
+.footer_column a {
+    color: rgb(175, 173, 173);
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.footer_column>ul>li {
+    list-style: none;
+    color: rgb(175, 173, 173);
+    font-size: 0.5rem;
+}
+
+.img_item img {
+    width: 23px;
+}
+
+.img_item li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img_item {
+    width: 40%;
+    justify-self: center;
+    padding: 0;
+}
+
+/*  */
+/*  */
+/* login style */
+.modal {
+    width: 100%;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+    /* Hidden by default */
+    display: none;
+    /* Stay in place */
+    position: fixed;
+    /* Sit on top */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* Full width */
+    width: 100%;
+    /* Full height */
+    height: 100%;
+    /* Enable scroll if needed */
+    overflow: auto;
+    /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 12%;
+}
+
+.lg_container {
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    width: 28%;
+    position: relative;
+    background-color: rgba(246, 230, 196, 0.8);
+    padding: 4% 0 1.5% 0;
+    border-radius: 10px;
+    /* border: 2px solid rgba(80, 35, 20, 1);
+    backdrop-filter: blur(10px); */
+}
+
+.login_form div img {
+    width: 20px;
+    position: relative;
+    top: 8%;
+}
+
+
+.login_title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.login_p {
+    margin: 0;
+    font-size: x-small;
+}
+
+.enter_group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin-top: 10%;
+}
+
+.enter_group input {
+    margin-left: 5%;
+}
+
+.button_group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button_group button {
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(80, 35, 20, 1);
+    color: rgba(255, 240, 220, 1);
+    margin: 15% 0;
+    cursor: pointer;
+}
+
+.button_group button:hover {
+    background-color: rgba(248, 144, 37, 0.9);
+}
+
+.close {
+    position: absolute;
+    right: 3%;
+    top: 1%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgba(248, 144, 37, 0.9);
+    cursor: pointer;
+}
+
+/* RWD選單 */
+.container_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+    font-size: 0.5rem;
+    background-color: rgba(80, 35, 20, 1);
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* margin: auto; */
+    justify-items: center;
+    /* justify-items:stretch */
+}
+
+.container_div a {
+    color: rgb(247, 238, 223);
+    text-decoration: none;
+    justify-items: center;
+}
+
+.container_div p {
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+
+.container_div img {
+    width: 30px;
+    margin-top: 10%;
+}
+.container_div button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(247, 238, 223);
+    font-family:Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+    font-size: 0.5rem;
+}
+
+/* rwd */
+/*  */
+/*  */
+@media screen and (max-width: 768px) {
+    .navlink span {
+        display: none;
+    }
+
+    .navlink {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navlink_container {
+        display: grid;
+        grid-template-columns: 2fr fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar_top {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* RWD 橫列選單 */
+    .container_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .logo_container {
+        margin: auto;
+    }
+
+    /* .hamburger_img {
+        display: none;
+    } */
+
+    .navlink_container {
+        display: none;
+    }
+
+    main {
+        margin-top: 35px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+
+    .prev,
+    .next {
+        top: 30%;
+        padding: 5px;
+    }
+
+    .order_button {
+        width: auto;
+    }
+
+    .section2 {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        padding: 6% 6% 1% 6%;
+        position: relative;
+        margin-bottom: 9%;
+    }
+
+    .section2 img {
+        position: relative;
+        left: 10%;
+    }
+
+    .sec2_text {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .section2 h2 {
+        font-size: large;
+        position: relative;
+        right: 12%;
+        margin: 7% 0;
+        /* height: fit-content; */
+    }
+
+    .section2 p {
+        position: absolute;
+        left: 6%;
+        top: 65%;
+        width: 75%;
+        text-align: left;
+        font-size: xx-small;
+        height: fit-content;
+    }
+
+    .section3 {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        padding: 4% 6%;
+        margin-bottom: 30%;
+        position: relative;
+        top: 5%;
+    }
+
+    .section3 img {
+        position: relative;
+        right: 10%;
+        z-index: -1;
+    }
+
+    .sec3_text {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .section3 h1 {
+        font-size: large;
+        position: relative;
+        right: 12%;
+        margin: 5% 0;
+        height: fit-content;
+    }
+
+    .section3 p {
+        position: absolute;
+        top: 95%;
+        width: 75%;
+        text-align: left;
+        font-size: xx-small;
+    }
+
+    .footer_column {
+        display: grid;
+        grid-template-columns: 0.9fr 1.5fr 1fr;
+        font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+    }
+    .footer {
+        padding-bottom: 12%;
+    }
+
+    /* 會員登入樣式 */
+    .modal {
+        padding-top: 30%;
+    }
+
+    .lg_container {
+        width: 75%;
+    }
+}

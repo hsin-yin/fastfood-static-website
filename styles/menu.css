@@ -1,0 +1,277 @@
+body {
+    height: auto;
+}
+
+.menu_h1 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: rgba(80, 42, 30, 1);
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+}
+
+.menu_p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: small;
+    color: rgba(80, 42, 30, 0.7);
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+
+}
+
+.menu_container {
+    list-style: none;
+    text-align: center;
+    margin: 0 0;
+    padding-bottom: 5%;
+    padding: 0.8% 0 0.8% 0;
+    position: sticky;
+    /* z-index: 5; */
+    top: 55px;
+    /* background-image: url(./picture/backgroundimage_1.png); */
+    background-color: rgb(247, 238, 223);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.9);
+    width: 83%;
+    margin: auto;
+}
+
+.menu_container>li {
+    display: inline-block;
+    width: 9%;
+    margin-right: 2.5%;
+}
+
+.menu_container>li>a {
+    text-decoration: none;
+    color: rgba(80, 35, 20, 1);
+
+    font-weight: 500;
+}
+
+.menu_img {
+    width: 100%;
+}
+
+.menu_container p {
+    margin: 0;
+    font-size: x-small;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+}
+
+.product_outside_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 3% 10%;
+
+}
+
+.product_container {
+    display: grid;
+    grid-template-rows: auto;
+    width: 70%;
+    justify-items: center;
+    padding: 2.5% 4%;
+    margin-bottom: 3%;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.product_container h5 {
+    margin-bottom: 1%;
+    margin-top: 0.3%;
+    color: rgba(80, 35, 20, 1);
+}
+
+.product_container img {
+    width: 80%;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+
+.product_container:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.p_price {
+    color: rgb(215, 34, 28);
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+
+.p_content {
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 1% 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgba(80, 35, 20, 1);
+}
+
+.product_button {
+    background-color: rgba(248, 144, 37, 0.9);
+    border-radius: 50px;
+    color: white;
+    border: none;
+    width: 30%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.sm_info_container {
+    display: flex;
+    flex-direction: row;
+    padding: 6% 9% 4% 9%;
+    justify-content: center;
+    font-family: Comic Sans MS, Segoe Script, Lucida Sans Typewriter, Bahnschrift SemiBold, Lucida Console, Impact, MV Boli;
+}
+
+.sm_info_left {
+    background-image: url('../pictures/burger_landscape9.png');
+    object-fit: fill;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1% 2% 1% 2%;
+    margin: 1% 2% 1% 1%;
+}
+
+.sm_info_left h4 {
+    color: white;
+    grid-column-start: 2;
+    margin: 6%;
+}
+
+.sm_info_left p {
+    color: white;
+    font-size: x-small;
+    grid-column-start: 2;
+}
+
+.sm_info_right h4 {
+    color: white;
+    grid-column-start: 2;
+    margin: 6%;
+}
+
+.sm_info_right p {
+    color: white;
+    font-size: x-small;
+    grid-column-start: 2;
+}
+
+.sm_info_right {
+    background-image: url('../pictures/burger_landscape8.jpg.png');
+    object-fit: contain;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1% 2% 1% 2%;
+    margin: 1% 1% 1% 2%;
+}
+
+@media screen and (max-width: 576px) {
+
+    /* 菜單選單 */
+    .menu_h1 {
+        margin-top: 1%;
+        font-size: large;
+    }
+
+    .menu_p {
+        font-size: x-small;
+    }
+
+    .menu_container {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+        justify-items: start;
+        padding-top: 2%;
+        background-color: rgb(247, 238, 223);
+        z-index: 1;
+    }
+
+    /* .menu_item1 {
+    } */
+
+    .menu_item2 {
+        position: relative;
+        left: 15%;
+    }
+
+    /* .menu_item3 {
+    } */
+    /* .menu_item4 {
+    } */
+    /* .menu_item5 {
+    } */
+    .menu_container img {
+        display: none;
+    }
+
+    .menu_container {
+        top: 50px;
+    }
+    .menu_container li a p {
+        font-size: xx-small;
+    }
+
+    .menu_container p:hover {
+        color: rgba(248, 144, 37, 0.9);
+    }
+
+
+    /* 下面兩欄資訊欄變一欄 */
+    .sm_info_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm_info_left {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        margin-bottom: 5%;
+    }
+
+    .sm_info_left h4 {
+        grid-column-start: 2;
+    }
+
+    .sm_info_left p {
+        font-size: xx-small;
+        grid-column-start: 2;
+        font-weight: bold;
+    }
+
+    .sm_info_right {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+    }
+
+    .sm_info_right h4 {
+        grid-column-start: 2;
+    }
+
+    .sm_info_right p {
+        font-size: xx-small;
+        font-weight: bold;
+    }
+
+    .img_item {
+        width: 100%;
+    }
+
+    .product_outside_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

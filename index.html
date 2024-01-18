@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGERLOVER</title>
+    <link rel="icon" href="./pictures/BURGER_ICON.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar_top">
+            <div class="logo_container">
+                <a class="logotext" href="index.html">
+                    <img class="hamburger_img" src="./pictures/Hamburger.png" alt="burgerLover logo">
+                    <span class="nav_logo">BURGERLOVER</span>
+                </a>
+            </div>
+            <div class="navlink_container">
+                <div class="navlink">
+                    <div>
+                        <a class="link_item" href="./pages/menu.html">菜單 <span style="font-size: 18px;">MENU</span></a>
+                    </div>
+                    <div>
+                        <a class="link_item" href="./pages/location.html">門市 <span
+                                style="font-size: 18px;">LOCATION</span></a>
+                    </div>
+                    <div>
+                        <a class="link_item" href="./pages/contact_us.html">聯絡我們 <span style="font-size: 18px;">CONTACT
+                                US</span></a>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button onclick="document.getElementById('lg_id').style.display='block'" class="login"><img
+                            class="login_img" src="./pictures/login_icon.png" alt=""></button>
+                    <button class="price"><img class="price_img" src="./pictures/price_icon.png" alt="">$ 0</button>
+                </div>
+            </div>
+        </nav>
+        <div class="nav_space"></div>
+    </header>
+    <main>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="./pictures/輪播圖5.png" style="width:100%; height: 100%;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./pictures/輪播圖8.png" style="width:100%; height: 100%;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./pictures/輪播圖.png" style="width:100%; height: 100%;">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dot_container">
+                <span class="dot dot_1" onclick="currentSlide(1)"></span>
+                <span class="dot dot_2" onclick="currentSlide(2)"></span>
+                <span class="dot dot_3" onclick="currentSlide(3)"></span>
+
+            </div>
+        </div>
+
+        <div class="order_container">
+            <button onclick="document.getElementById('lg_id').style.display='block'" class="order_button">線上訂餐</button>
+            <a style="align-self: center;" href="./pages/menu.html"><button class="order_button">非會員訂餐</button></a>
+        </div>
+        <div class="section2">
+            <img src="pictures/burger_landscape6.jpg" alt="">
+
+            <div class="sec2_text">
+                <h2>THE BEEF MAKES THE BURGER</h2>
+                <p>Certified Angus Beef 是屬於美國安格斯肉牛協會登記有案的註冊商標，必須產精肉率符合
+                    CAB所訂標準才能標記。黑安格斯牛被公認最具高品質肉質潛力的牛種，所產出的牛肉，含多量且細緻均勻分怖的大理石紋脂肪而無過量的殘脂，肉質更是細嫩而多汁。
+                </p>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="sec2_text">
+                <h1>ABOUT US</h1>
+                <p>用心對待每一份餐點及每一位客人，是我們一路走來的堅持，也是餐點美味的秘訣。我們深信手作的溫度與味道，真材實料吃得出來！麵包透過18小時的天然發酵製作而成，漢堡肉份量實在，現點現烤，讓人吃到的每一口，都散發著滿滿的幸福。
+                </p>
+            </div>
+            <img src="./pictures/shop1.png" alt="">
+        </div>
+
+    </main>
+
+    <!-- 登入框 -->
+    <div id="lg_id" class="modal">
+        <div class="lg_container">
+            <p4 class="login_title">會員登入</p4>
+            <p class="login_p">LOGIN</p>
+            <span onclick="document.getElementById('lg_id').style.display='none'" class="close">&times;</span>
+            <form class="login_form" action="">
+                <div class="enter_group">
+                    <label for="member"><img src="./pictures/login_icon2.png" alt=""></label>
+                    <input id="member" type="email" name="" id="" placeholder="請輸入email" required>
+                </div>
+                <div class="enter_group">
+                    <label for="pswd"><img src="./pictures/Password_icon.png" alt=""></label>
+                    <input id="pswd" type="password" name="" id="" placeholder="請輸入密碼" required>
+                </div>
+                <div class="button_group">
+                    <button>登入</button>
+                    <button onclick="document.getElementById('lg_id').style.display='none'">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- RWD 下面fix選單 -->
+    <div class="container_div">
+        <div>
+            <a href="./index.html">
+                <img src="./pictures/RWD_icon1.png" alt="">
+                <p>HOME</p>
+            </a>
+        </div>
+        <div>
+            <a href="./pages/menu.html">
+                <img src="./pictures/RWD_icon2.png" alt="">
+                <p>MENU</p>
+            </a>
+        </div>
+        <div>
+            <a href="./pages/location.html">
+                <img src="./pictures/RWD_icon3.png" alt="">
+                <p>LOCN</p>
+            </a>
+        </div>
+        <div>
+            <a href="./pages/contact_us.html">
+                <img src="./pictures/RWD_icon6.png" alt="">
+                <p>MAIL</p>
+            </a>
+        </div>
+        <div>
+            <button class="" onclick="document.getElementById('lg_id').style.display='block'">
+                <img src="./pictures/RWD_icon5.png" alt="">
+                <p>LOGIN</p>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_column">
+            <ul class="footer_col1">
+                <li><a href="#">隱私權聲明</a></li>
+                <li><a href="#">訂購須知</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">使用條款</a></li>
+            </ul>
+            <ul>
+                <li><a href="./pages/contact_us.html">聯絡我們</a></li>
+                <li>服務時間: 9:00 - 21:00</li>
+                <li>電話: 04-123456</li>
+            </ul>
+            <ul class="img_item">
+                <li>
+                    <a href="#"><img src="./pictures/Facebook.png" alt=""></a>
+                    <a href="#"><img src="./pictures/instagram.png" alt=""></a>
+                    <a href="#"><img src="./pictures/Twitter.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // login 
+        // Get the modal
+        var modal = document.getElementById('lg_id');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>錯誤頁面</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/error.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar_top">
+            <div class="logo_container">
+                <a class="logotext" href="../index.html">
+                    <img class="hamburger_img" src="../pictures/Hamburger.png" alt="burgerLover logo">
+                    <span class="nav_logo">BURGERLOVER</span>
+                </a>
+            </div>
+            <div class="navlink_container">
+                <div class="navlink">
+                    <div>
+                        <a class="link_item" href="./menu.html">菜單 MENU</a>
+                    </div>
+                    <div>
+                        <a class="link_item" href="./location.html">門市 LOCATION</a>
+                    </div>
+                    <div>
+                        <a class="link_item" href="./contact_us.html">聯絡我們 CONTACT US</a>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button onclick="document.getElementById('lg_id').style.display='block'" class="login"><img
+                            class="login_img" src="../pictures/login_icon.png" alt="login"></button>
+                    <button class="price"><img class="price_img" src="../pictures/price_icon.png" alt="shopping cart">$
+                        0</button>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+    <h1>發生錯誤，找不到該頁面</h1>
+    <button class="error_btn"><a href="../index.html">回到首頁</a></button>
+
+    <div id="lg_id" class="modal">
+        <div class="lg_container">
+            <p4 class="login_title">會員登入</p4>
+            <p class="login_p">LOGIN</p>
+            <span onclick="document.getElementById('lg_id').style.display='none'" class="close">&times;</span>
+            <form class="login_form" action="">
+                <div class="enter_group">
+                    <label for="member"><img src="./pictures/login_icon2.png" alt=""></label>
+                    <input id="member" type="email" name="" id="" placeholder="請輸入email" required>
+                </div>
+                <div class="enter_group">
+                    <label for="pswd"><img src="./pictures/Password_icon.png" alt=""></label>
+                    <input id="pswd" type="password" name="" id="" placeholder="請輸入密碼" required>
+                </div>
+                <div class="button_group">
+                    <button>登入</button>
+                    <button onclick="document.getElementById('lg_id').style.display='none'">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
